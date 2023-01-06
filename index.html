@@ -17,7 +17,10 @@
     <![endif]-->
 
     <!-- Google Fonts -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
 
     <!-- Global Style -->
 <style>
@@ -31,7 +34,7 @@
      word-spacing: normal;
     }
 
-    table, td, div, h1, p {font-family: 'Open Sans', Roboto, Helvetica, Arial, sans-serif;}
+    table, td, div, h1, h2, h3, h4, p {font-family: 'Ubuntu', Helvetica, Arial, sans-serif;}
 
     table, td {
       border-collapse: collapse !important;
@@ -41,19 +44,86 @@
       -ms-text-size-adjust: 100%;
     }
 
+    table {
+        border-spacing: 0;
+    }
+
+    td {
+        padding: 0;
+    }
+
     img {
-      display: inline-block;
+      display: block;
       border: 0;
       height: auto;
       line-height: 100%;
+      max-width: 100%;
       outline: none;
       text-decoration: none;
+      font-size: 13;
     }
+</style>
 
+<!-- Media Queries -->
+<style>
+     /* Mobile */
+     @media only screen and (max-width: 600px){
+        .container {
+            width: 100%;
+        }
+     }
 </style>
 
 </head>
-<body>
+<body style="width: 100%; table-layout: fixed; margin: 0 auto; padding: 0;padding-bottom: 60px;">
+    <!-- ==========>> Email Start <<==========  -->
+    <table role="presentation" width="100%" border="0" border-spacing="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td align="center" style="padding: 0;">
+                <!-- ==========>> Email Container <<==========  -->
+                <table class="container" role="presentation"  width="600px" align="center" border="0" border-spacing="0" cellpadding="0" cellspacing="0" style="width: 100%; max-width: 600px; background-color: #f5f5f1">
+                    <!-- ==========>> Start of Brand Section <<==========  -->
+                    <tr>
+                        <td align="center" style="padding: 0;">
+                            <table role="presentation" align="center" border="0" border-spacing="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td align="center" style="padding: 0; width: 100%; max-width: 600px; font-size: 0;">
+                                        <a href="#" >
+                                            <img src="img/Logo_brand.jpeg" alt="Huckberry Brand Logo" style="width: 600px;">
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- ==========>> End of Brand Section <<==========  -->
+
+                    <!-- ==========>> Start of Hero Image <<==========  -->
+                    <tr>
+                        <td align="cetner" style="padding: 0;">
+                            <table role="presentation" align="center" border="0" border-spacing="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td align="center" style="padding: 0; width: 100%; max-width: 600px; font-size: 0;">
+                                        <a href="#">
+                                            <img src="img/Hero_img.jpeg" alt="Huckberry Brand Logo" style="width: 600px;">
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!-- ==========>> End of Hero Image <<==========  -->
+
+                    <!-- ==========>> Start of Order Details <<==========  -->
+                    
+                    <!-- ==========>> End of Order Details <<==========  -->
+
+                </table>
+                <!-- ==========>> /Email Container <<==========  -->
+            </td>
+        </tr>
+    </table>
+    <!-- ==========>> /Email End <<==========  -->
     
 </body>
 </html>
