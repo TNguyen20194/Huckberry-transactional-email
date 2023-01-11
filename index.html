@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+<!DOCTYPE htmlPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en" xmlns="https://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <meta name="x-apple-disable-message-reformatting" />
+    <!-- fixes email not full width ios gmail -->
     <title>Huckberry</title>
      <!--[if mso]>
       <noscript>
@@ -23,14 +24,16 @@
     
 
     <!-- Global Style -->
-<style>
+<style type="text/css">
     body {
     height: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
     width: 100% !important;
-    -webkit-text-size-adjust: none;
-    -ms-text-size-adjust: none;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
      word-spacing: normal;
     }
 
@@ -46,6 +49,10 @@
 
     table {
         border-spacing: 0;
+    }
+
+    table td {
+        border-collapse: collapse;
     }
 
     td {
@@ -65,7 +72,7 @@
 </style>
 
 <!-- Media Queries -->
-<style>
+<style type="text/css">
      /* Mobile */
      @media only screen and (max-width: 600px){
         .container {
@@ -88,6 +95,10 @@
         .sweater-container {
             padding-right: 5px !important;
             padding-left: 5px !important;
+        }
+        .copyright {
+            padding-right: 18px !important;
+            padding-left: 18px !important;
         }
      }
 </style>
@@ -509,7 +520,7 @@
 
                     <!-- Handpicked Items -->
                     <tr>
-                        <td align="center" valign="top" style="padding: 0; padding-top: 40px;">
+                        <td align="center" valign="top" style="padding: 0; padding-top: 40px; padding-bottom: 10px;">
                           <table class="handpicked-items-container" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
                             <!-- 1st Row -->
                             <tr>
@@ -640,8 +651,114 @@
                         </td>
                       </tr>
                     <!-- /Handpicked Items -->
-                    
                     <!-- ==========>> /End of Get Inspired Section  <<==========  -->  
+
+                    <!-- ==========>> Start of Footer <<==========  -->
+                    
+                    <tr>
+                      <td align="center" valign="top" style="padding: 0;">
+                        <table class="footer" role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #1d2b39;">
+                          <!-- Stay connected Row -->
+                          <tr>
+                            <td align="center" valign="top" style="padding: 0;">
+                              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td align="center" valign="top" style="padding: 0;">
+                                        <img src="img/Stay connected_img.jpeg" alt="Stay connected" style="width: 100%; max-width: 600px; height: auto;">
+                                    </td>
+                                </tr>
+                              </table>
+                            </td>               
+                          </tr>
+                          <!-- /Stay connected Row -->
+
+                           <!-- Social Media Row -->
+                           <tr>
+                            <td align="center" valign="top" style="padding: 0; padding-top: 20px;">
+                              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td align="center" valign="top" style="padding: 0;">
+                                        <!-- Intagram -->
+                                        <table role="presentation" width="33.33%" cellpadding="0" cellspacing="0" border="0" align="left">
+                                            <tr>
+                                                <td align="center" valign="top" style="padding: 0;">
+                                                    <a href="#" style="text-decoration: none;">
+                                                        <img src="img/Instagram.jpeg" alt="Instagram" style="max-width: 100%; height: auto;">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                         <!-- /Intagram -->
+
+                                         <!-- Youtube -->
+                                        <table role="presentation" width="33.33%" cellpadding="0" cellspacing="0" border="0" align="left">
+                                            <tr>
+                                                <td align="center" valign="top" style="padding: 0;">
+                                                    <a href="#" style="text-decoration: none;">
+                                                        <img src="img/Youtube.jpeg" alt="Youtube" style="max-width: 100%; height: auto;">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                         <!-- /Youtube -->
+
+                                         <!-- Texts -->
+                                        <table role="presentation" width="33.33%" cellpadding="0" cellspacing="0" border="0" align="left">
+                                            <tr>
+                                                <td align="center" valign="top" style="padding: 0;">
+                                                    <a href="#" style="text-decoration: none;">
+                                                        <img src="img/Texts.jpeg" alt="Texts" style="max-width: 100%; height: auto;">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                         <!-- /Texts -->
+                                    </td>
+                                </tr>
+                              </table>
+                            </td>               
+                          </tr>
+                          <!-- /Social Media Row -->
+
+                          <!-- Copyrigh Row -->
+                          <tr>
+                            <td class="copyright" align="center" valign="top" style="padding: 0; padding-top: 20px; padding-bottom: 15px;">
+                              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td align="center" valign="top" style="padding: 0;">
+                                        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+                                            <tr>
+                                                <td align="center" valign="top" style="padding: 0; padding-bottom: 10px;">
+                                                    <p style="font-size: 12px; font-weight: 400; line-height: 1.5; 
+                                                    color: #ffffff; margin: 0; padding: 0;">
+                                                        ©2022 Huckberry Inc. | 2901 South First St., Suite 200, Austin, TX 78704
+                                                    </p>   
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" valign="top" style="padding: 0;">
+                                                    <p style="font-size: 11px; font-weight: 400; line-height: 1.5; 
+                                                    color: #ffffff; margin: 0; padding: 0;">
+                                                        <a href="#" style="text-decoration: none;"><span style="font-size: 11px; color: #ffffff;">
+                                                            Web Version | Email Frequency | Unsubscribe
+                                                        </span>
+                                                        </a>
+                                                    </p>   
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                              </table>
+                            </td>               
+                          </tr>
+                          <!-- /Copyright Row -->
+                        </table>
+                        
+                      </td>
+                    </tr>
+                    
+                    <!-- ==========>> End of Footer <<==========  -->
                 </table>
                 <!-- ==========>> /Email Container <<==========  -->
             </td>
