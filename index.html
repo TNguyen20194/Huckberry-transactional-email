@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <meta name="x-apple-disable-message-reformatting" />
+     <meta name="format-detection" content="telephone=no, date=no, address=no, email=no, url=no">
     <!-- fixes email not full width ios gmail -->
+    <meta name="x-apple-disable-message-reformatting" />
+    <!-- control dark mode preferences -->
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+
     <title>Huckberry</title>
      <!--[if mso]>
       <noscript>
@@ -16,6 +21,13 @@
         </xml>
       </noscript>
     <![endif]-->
+
+    <style>
+        :root {
+          color-scheme: light dark;
+          supported-color-schemes: light dark;
+        }
+    </style>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
